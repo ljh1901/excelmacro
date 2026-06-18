@@ -99,9 +99,10 @@ Sub SplitLegalData()
             ' [9] 셀 내부 줄 반복
             '================================================
             For j = 0 To UBound(arr)
-
                 txt = Trim(arr(j))
-
+                    ' 엔터 제거
+                txt = Replace(txt, Chr(10), " ")
+                txt = Replace(txt, Chr(13), " ")
                 If txt <> "" Then
 
                     '============================================
