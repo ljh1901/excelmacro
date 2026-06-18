@@ -1,4 +1,4 @@
-'excelmacro'
+[['excelmacro'
 
 Option Explicit
 Sub SplitLegalData()
@@ -120,6 +120,11 @@ Sub SplitLegalData()
                     '============================================
                     ' [11] 관련법령 / 관련내규 구간 판별
                     '============================================
+                    'If InStr(txt, "법령") > 0 Then
+                      '  currentType = "01"
+                     'ElseIf InStr(txt, "내규") > 0 Then
+                      '  currentType = "02"
+                     'End If
                     Select Case txt
 
                         Case "관련법령"
@@ -162,3 +167,4 @@ Sub SplitLegalData()
     Next i
 End Sub
 
+](url)](url)
